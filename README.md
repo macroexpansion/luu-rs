@@ -1,11 +1,7 @@
-# cocopy-rs
-- COntent COPY
+# clipcpy-rs
+Copy text file content to clipboard
 
 ### Usage
 ```bash
-# to copy content from a file to another file
-cocopy [source_file_path] [destination_file_path]
-
-# to copy content to clipboard
-cocopy [source_file_path]
+clipcpy [source_file_path]
 ```
