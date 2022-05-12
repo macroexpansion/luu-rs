@@ -1,7 +1,9 @@
-use clipboard::{ClipboardContext, ClipboardProvider};
+// use clipboard::{ClipboardContext, ClipboardProvider};
+use clipboard_ext::prelude::*;
+use clipboard_ext::x11_bin::ClipboardContext;
 use std::error::Error;
-use std::fs::{File, OpenOptions};
-use std::io::{copy, BufReader, BufWriter, Read, Write};
+use std::fs::File;
+use std::io::Read;
 
 pub fn clipboard_copy(src_file_path: &str) -> Result<(), Box<dyn Error>> {
     let mut src_file = File::open(src_file_path)?;
