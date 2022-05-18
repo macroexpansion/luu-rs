@@ -9,6 +9,7 @@ rust-version = "1.60"
 homepage = "https://github.com/trasua/clipcpy-rs"
 repository = "https://github.com/trasua/clipcpy-rs"
 categories = ["command-line-utilities"]
+readme = "README.md"
 
 [dependencies]
 clap = { version = "3.1.18", features = ["derive"] }
