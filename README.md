@@ -1,7 +1,7 @@
-# clipcpy-rs
+# luu-rs
 Copy text file content to clipboard
 
 ### Usage
 ```bash
-clipcpy [source_file_path]
+luu [source_file_path]
 ```

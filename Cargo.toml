@@ -1,13 +1,13 @@
 [package]
-name = "clipcpy"
-version = "0.2.0"
+name = "luu"
+version = "0.1.0"
 edition = "2021"
 authors = ["trasua"]
 description = "Copy content from a file to clipboard"
 license = "MIT"
 rust-version = "1.60"
-homepage = "https://github.com/trasua/clipcpy-rs"
-repository = "https://github.com/trasua/clipcpy-rs"
+homepage = "https://github.com/trasua/luu-rs"
+repository = "https://github.com/trasua/luu-rs"
 categories = ["command-line-utilities"]
 readme = "README.md"
 
