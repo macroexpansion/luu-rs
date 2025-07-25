@@ -1,17 +1,18 @@
 [package]
 name = "luu"
-version = "0.1.0"
-edition = "2021"
-authors = ["trasua"]
+version = "0.1.1"
+edition = "2024"
+authors = ["macroexpansion"]
 description = "Copy content from a file to clipboard"
 license = "MIT"
-rust-version = "1.60"
-homepage = "https://github.com/trasua/luu-rs"
-repository = "https://github.com/trasua/luu-rs"
+rust-version = "1.88"
+homepage = "https://github.com/macroexpansion/luu-rs"
+repository = "https://github.com/macroexpansion/luu-rs"
 categories = ["command-line-utilities"]
 readme = "README.md"
 
 [dependencies]
-clap = { version = "3.1.18", features = ["derive"] }
-copypasta = "0.7.1"
-copypasta-ext = "0.3.7"
+clap = { version = "3.2.25", features = ["derive"] }
+cli-clipboard = "0.4.0"
+# copypasta = { version = "0.10.2", features = ["wayland"] }
+# copypasta-ext = "0.4.4"

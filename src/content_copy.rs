@@ -1,15 +1,19 @@
-use copypasta_ext::prelude::*;
-use copypasta_ext::x11_bin::ClipboardContext;
-use std::error::Error;
-use std::fs::File;
-use std::io::Read;
+use std::{error::Error, fs::File, io::Read};
+
+// use cli_clipboard::{ClipboardContext, ClipboardProvider};
+use cli_clipboard::{get_contents, set_contents};
 
 pub fn clipboard_copy(src_file_path: &str) -> Result<(), Box<dyn Error>> {
     let mut src_file = File::open(src_file_path)?;
-    let mut ctx = ClipboardContext::new().unwrap();
+    // let mut ctx = ClipboardContext::new()?;
+
     let mut buffer: String = String::new();
     src_file.read_to_string(&mut buffer)?;
-    ctx.set_contents(buffer.trim_end().to_string()).unwrap();
-    // println!("{:?}", ctx.get_contents()?);
+
+    println!("{:?}", get_contents()?);
+    // println!("{:?}", buffer.trim_end().to_string());
+    set_contents(buffer.trim_end().to_string())?;
+
+    println!("{:?}", get_contents()?);
     Ok(())
 }
