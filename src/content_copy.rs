@@ -11,8 +11,11 @@ pub fn clipboard_copy(src_file_path: &str) -> Result<(), Box<dyn Error>> {
 
     ctx.set_contents(buffer.trim_end().to_string())?;
 
-    let _resp = ctx.get_contents()?;
-    // println!("{:?}", _resp);
+    if cfg!(target_os = "linux") {
+        let _resp = ctx.get_contents()?;
+        // println!("{:?}", _resp);
+    }
+
     println!("Copied to clipboard");
 
     Ok(())
