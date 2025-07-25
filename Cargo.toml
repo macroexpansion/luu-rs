@@ -1,6 +1,6 @@
 [package]
 name = "luu"
-version = "0.1.3"
+version = "0.1.4"
 edition = "2024"
 authors = ["macroexpansion"]
 description = "Copy content from a file to clipboard"
